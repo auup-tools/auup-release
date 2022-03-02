@@ -32,9 +32,9 @@
     <meta name="googlebot" content="index,follow">
 
     <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.7/firebase-app-compat.js"></script>
+    <!-- <script defer src="/__/firebase/9.6.7/firebase-app-compat.js"></script> -->
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.7/firebase-auth-compat.js"></script>
+    <!-- <script defer src="/__/firebase/9.6.7/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/9.6.7/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/9.6.7/firebase-firestore-compat.js"></script>
     <script defer src="/__/firebase/9.6.7/firebase-functions-compat.js"></script>
@@ -42,12 +42,12 @@
     <script defer src="/__/firebase/9.6.7/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/9.6.7/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/9.6.7/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.7/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-performance-compat.js"></script> -->
     <!-- 
        initialize the SDK after all desired features are loaded, set useEmulator to false
        to avoid connecting the SDK to running emulators.
      -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
 </head>
 
 <body>
@@ -531,31 +531,33 @@
                     <div class="flex flex-col items-start justify-start w-full h-full p-10 lg:p-16 xl:p-24">
                         <h4 class="w-full text-3xl font-bold">Contact us</h4>
                         <p class="text-lg text-gray-500">Please tell us what you want...</p>
-                        <div class="relative w-full mt-10 space-y-8">
-                            <!-- <div class="relative">
-                                <label class="font-medium text-gray-900">Name</label>
-                                <input type="text"
-                                    class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
-                                    placeholder="Enter Your Name" autocomplete="off"
-                                    style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
-                            </div> -->
-                            <div class="relative">
-                                <label class="font-medium text-gray-900">Email</label>
-                                <input type="email" autocomplete="on"
-                                    class="form-control block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
-                                    placeholder="Your email">
+                        <form id="form-contact" class='w-full'>
+                            <div class="relative w-full mt-10 space-y-8">
+                                <!-- <div class="relative">
+                                    <label class="font-medium text-gray-900">Name</label>
+                                    <input type="text"
+                                        class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                                        placeholder="Enter Your Name" autocomplete="off"
+                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                </div> -->
+                                <div class="relative">
+                                    <label class="font-medium text-gray-900">Email</label>
+                                    <input name="email" required type="email" autocomplete="on"
+                                        class="form-control block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                                        placeholder="Your email">
+                                </div>
+                                <div class="relative">
+                                    <label class="font-medium text-gray-900">Message</label>
+                                    <textarea name="message" required autocomplete="off"
+                                        class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                                        rows="3" placeholder="Your message"></textarea>
+                                </div>
+                                <div class="relative">
+                                    <button type="submit"
+                                        class="inline-block w-full px-5 py-4 text-lg font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-700 ease">Send</button>
+                                </div>
                             </div>
-                            <div class="relative">
-                                <label class="font-medium text-gray-900">Message</label>
-                                <textarea autocomplete="off"
-                                    class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
-                                    rows="3" placeholder="Your message"></textarea>
-                            </div>
-                            <div class="relative">
-                                <a href="#_"
-                                    class="inline-block w-full px-5 py-4 text-lg font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-700 ease">Send</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -650,6 +652,7 @@
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+        import { getFirestore, collection, setDoc, doc } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
@@ -668,7 +671,28 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-      </script>
+        const db = getFirestore(app);
+
+        const form = document.getElementById('form-contact');
+        form.addEventListener('submit', onFeedback);
+
+        async function onFeedback(event) {
+            event.preventDefault();
+
+            const email = form.querySelector('[name="email"]').value
+            const message = form.querySelector('[name="message"]').value
+            const id = email + "-" + new Date().getTime()
+
+            form.querySelector('[name="message"]').value = ''
+            form.querySelector('[type="submit"]').textContent = "Thank you!"
+
+            await setDoc(doc(db, "contacts", id ), {
+                email,
+                message,
+            });
+        }
+
+    </script>
 </body>
 
 </html>
