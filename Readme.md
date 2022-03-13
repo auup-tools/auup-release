@@ -12,7 +12,8 @@ https://firebase.google.com/docs/hosting/full-config
 
 ### Deploy
 
-    gitall -m "commit"
+    gitall ""
+
 ```
     firebase deploy --only hosting
 ```
